@@ -18,7 +18,7 @@ alert("Cadastro realizado!");
 navigate("/login");
 }catch(e){alert(e.message);}
 };
-return(<div>
+return(<div className="container">
 <h2>Cadastro</h2>
 <input placeholder="Nome" onChange={e=>setNome(e.target.value)}/>
 <input placeholder="Sobrenome" onChange={e=>setSobrenome(e.target.value)}/>
