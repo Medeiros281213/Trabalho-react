@@ -24,8 +24,8 @@ export default function Cadastro() {
         email,
       });
 
-      alert("Cadastro realizado!");
-      navigate("/login");
+      alert("Cadastro realizado com sucesso!");
+      navigate("/");
     } catch (e) {
       alert(e.message);
     }
@@ -34,12 +34,21 @@ export default function Cadastro() {
   return (
     <div>
       <h2>Cadastro</h2>
+
       <input placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
       <input placeholder="Sobrenome" onChange={(e) => setSobrenome(e.target.value)} />
       <input type="date" onChange={(e) => setNascimento(e.target.value)} />
       <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
       <input type="password" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} />
+
       <button onClick={cadastrar}>Cadastrar</button>
+
+      <p 
+        onClick={() => navigate("/")} 
+        style={{ cursor: "pointer", color: "blue" }}
+      >
+        Já tem conta? Fazer login
+      </p>
     </div>
   );
 }
