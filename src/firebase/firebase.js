@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY_AQUI",
+  apiKey: "AIzaSyAWmLH4KPjJTw2pffVNx33wPRBums_NB0w",
   authDomain: "trabalho-react-24d3d.firebaseapp.com",
   projectId: "trabalho-react-24d3d",
-  storageBucket: "trabalho-react-24d3d.appspot.com",
-  messagingSenderId: "1086580781924",
-  appId: "1:1086580781924:web:c4f750568d52a86a25a3e9"
+  storageBucket: "trabalho-react-24d3d.firebasestorage.app",
+  messagingSenderId: "1086580718924",
+  appId: "1:1086580718924:web:c4f750568d52a86a25a3e9",
+  measurementId: "G-SRHVRWMTT6"
 };
 
 const app = initializeApp(firebaseConfig);
