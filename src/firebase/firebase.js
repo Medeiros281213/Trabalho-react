@@ -3,15 +3,15 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSy...",
+  apiKey: "SUA_API_KEY_AQUI",
   authDomain: "trabalho-react-24d3d.firebaseapp.com",
   projectId: "trabalho-react-24d3d",
   storageBucket: "trabalho-react-24d3d.appspot.com",
-  messagingSenderId: "1086580718924",
-  appId: "1:1086580718924:web:cf750568d52a86a25a3e9"
+  messagingSenderId: "1086580781924",
+  appId: "1:1086580781924:web:c4f750568d52a86a25a3e9"
 };
 
-const app = initializeApp(firebase);
+const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
