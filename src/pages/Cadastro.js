@@ -32,36 +32,15 @@ export default function Cadastro() {
   };
 
   return (
-    <div className="container">
-      <h2>Cadastro</h2>
+  <div className="container">
+    <h2>Cadastro</h2>
 
-      <input
-        placeholder="Nome"
-        onChange={(e) => setNome(e.target.value)}
-      />
+    <input placeholder="Nome" onChange={e=>setNome(e.target.value)} />
+    <input placeholder="Sobrenome" onChange={e=>setSobrenome(e.target.value)} />
+    <input type="date" onChange={e=>setNascimento(e.target.value)} />
+    <input placeholder="Email" onChange={e=>setEmail(e.target.value)} />
+    <input type="password" placeholder="Senha" onChange={e=>setSenha(e.target.value)} />
 
-      <input
-        placeholder="Sobrenome"
-        onChange={(e) => setSobrenome(e.target.value)}
-      />
-
-      <input
-        type="date"
-        onChange={(e) => setNascimento(e.target.value)}
-      />
-
-      <input
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <input
-        type="password"
-        placeholder="Senha"
-        onChange={(e) => setSenha(e.target.value)}
-      />
-
-      <button onClick={cadastrar}>Cadastrar</button>
-    </div>
-  );
-}
+    <button onClick={cadastrar}>Cadastrar</button>
+  </div>
+);
