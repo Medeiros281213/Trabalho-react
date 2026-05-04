@@ -29,8 +29,7 @@ export default function Cadastro() {
     } catch (e) {
       alert(e.message);
     }
-  };
-
+  }
   return (
   <div className="container">
     <h2>Cadastro</h2>
@@ -44,3 +43,4 @@ export default function Cadastro() {
     <button onClick={cadastrar}>Cadastrar</button>
   </div>
 );
+}
